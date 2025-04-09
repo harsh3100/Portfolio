@@ -1,73 +1,295 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Singh's Portfolio</title>
+    <title>Harsh Singh | CS Student & ML Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1><span style="color: #3498db;">Harsh</span> <span style="color: #f1c40f;">Singh</span></h1>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>My Projects</h1>
-        <div class="project-cards">
-            <!-- Project Card 1 -->
-            <div class="project-card">
-                <h2>Flappy Bird Game</h2>
-                <p>Developed a Flappy Bird game using Unity and C# as a part of my coursework.</p>
-                <button>View Project</button>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing">Hi, I'm Harsh Singh</h1>
+                <h2>Computer Science Student & ML Enthusiast</h2>
+                <p>Passionate about Machine Learning, Data Science, and turning ideas into real projects.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
-
-            <!-- Project Card 2 -->
-            <div class="project-card">
-                <h2>Personal Portfolio Website</h2>
-                <p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript.</p>
-                <button>View Project</button>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-tie"></i>
+                </div>
             </div>
-
-           
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
-        <h1>About Me</h1>
-        <p>I am a computer science student at Sikkim Manipal Institute of Technology with a strong passion for game development, artificial intelligence, and machine learning.</p>
-        <ul>
-            <li><strong>Technical Skills:</strong> C, C++, Java, Python, HTML, CSS, JavaScript</li>
-            <li><strong>Achievements:</strong> Academic Excellence, Dean's List</li>
-        </ul>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I'm a Computer Science student at Sikkim Manipal Institute of Technology with strong proficiency in programming, 
+                    Data Structures & Algorithms, and problem-solving. I'm passionate about Machine Learning, Data Science, 
+                    and Information Retrieval, with a keen interest in transforming theoretical concepts into practical solutions.
+                </p>
+                <p>
+                    I learn fast, enjoy collaborating with others, and love turning ideas into real projects. Excited to contribute, 
+                    learn, and grow through meaningful work!
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/harsh3100" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:harshsinghworkofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h1>Get in Touch</h1>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button>Send Message</button>
-        </form>
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <div class="skill-bar" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <div class="skill-bar" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>AI/ML</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>scikit-learn</span>
+                            <div class="skill-bar" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Pandas</span>
+                            <div class="skill-bar" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NumPy</span>
+                            <div class="skill-bar" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Matplotlib</span>
+                            <div class="skill-bar" data-level="82"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Seaborn</span>
+                            <div class="skill-bar" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Plotly</span>
+                            <div class="skill-bar" data-level="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Linux</span>
+                            <div class="skill-bar" data-level="80"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Unity</span>
+                            <div class="skill-bar" data-level="75"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar" data-level="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://camo.githubusercontent.com/a606ca5baf004d747b29dcd8e852bf5d9f7cded62aee4375bcf301b6bd3ab574/68747470733a2f2f7777772e656d6265646465642d726f626f746963732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30312f497269732d446174617365742d436c617373696669636174696f6e2d31303234783336372e706e67" alt="Iris Flower Classification">
+                    </div>
+                    <div class="project-info">
+                        <h3>Iris Flower Classification</h3>
+                        <p>Built a classification model using scikit-learn to predict iris species from petal/sepal measurements.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Pandas</span>
+                        </div>
+                        <a href="https://github.com/harsh3100/iris-classification" target="_blank" class="btn btn-small">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*cDRFtpTiOJFrfzS5.jpg" alt="House Price Prediction">
+                    </div>
+                    <div class="project-info">
+                        <h3>House Price Prediction</h3>
+                        <p>Developed a regression model to estimate housing prices using the Boston Housing dataset.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/harsh3100/house_price_prediction" target="_blank" class="btn btn-small">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://i.pinimg.com/736x/8e/bf/f3/8ebff3f8bf5ed7a321a09aaff1e51037.jpg" alt="Student Performance Predictor">
+                    </div>
+                    <div class="project-info">
+                        <h3>Student Performance Predictor</h3>
+                        <p>Developed a model to predict student performance using study hours, attendance and past grades.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/harsh3100/student_performance_predictor" target="_blank" class="btn btn-small">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://i.pinimg.com/736x/28/32/de/2832ded03d2105f45b474981dd163da5.jpg" alt="Flappy Bird Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Flappy Bird Game</h3>
+                        <p>Created a fully functional Flappy Bird clone in Unity using C# with custom physics, scoring system, and obstacle mechanics.</p>
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Development</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2027</div>
+                    <div class="timeline-content">
+                        <h3>Sikkim Manipal Institute of Technology</h3>
+                        <p>B.Tech in Computer Science</p>
+                        <p>CGPA: 9.66 (3rd Semester)</p>
+                        <p><strong>Courses:</strong> Data Science, Data Structures, Algorithms, OOP in C++, Information Retrieval, DBMS, Web Development</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>DAV Public School, Jamshedpur</h3>
+                        <p>Class XII - 84.8%</p>
+                        <p><strong>Subjects:</strong> Computer Science, Physics, Chemistry, Mathematics</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>DAV Public School, Jamshedpur</h3>
+                        <p>Class X - 90.5%</p>
+                        <p><strong>Subjects:</strong> Computer Science, Mathematics, Science, English, Sanskrit, SST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> harshsinghworkofficial@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 6207470050</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jamshedpur, India</p>
+                    <div class="contact-social">
+                        <a href="https://github.com/harsh3100" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:harshsinghworkofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+916207470050"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Harsh Singh. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
